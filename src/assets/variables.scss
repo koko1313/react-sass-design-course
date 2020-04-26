@@ -14,7 +14,10 @@ $theme-colors: (
     "border-light": #e6e6e6,
     "border-ultra-light": #f1f1f1,
     "section-bg": #ffffff,
+    "white": #ffffff,
 );
+
+$grid-gutter-width: 20px; // хубаво е тук да е в px, за да ако потребителя си променя шрифта, това да не промени разстоянието между елементите
 
 // Font weight
 $font-weight-semibold: 600;
@@ -33,6 +36,16 @@ $font-family-serif: Georgia, 'Times New Roman', Times, serif;
 $font-family-monospace: Menlo, Monaco, Consolas, 'Liberation Mono',
 'Courier New', monospace;
 $font-family-base: $font-family-sans-serif;
+
+// Border ragius
+$border-radius-xlg: .5rem;
+$border-radius-xxlg: 1rem;
+
+
+// Buttons
+$btn-border-radius: 10rem;
+$btn-padding-x: 1.25rem;
+
 
 // Components
 

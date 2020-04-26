@@ -1,0 +1,26 @@
+.promo-banner {
+    flex: 1;
+    background-color: theme-color("section-bg");
+    border-radius: $border-radius-xxlg;
+    overflow: hidden;
+    position: relative;
+    color: theme-color("white");
+    text-shadow: 2px 2px #000000;
+
+    // css + selector - когато имаме повече от един елемент
+    + .promo-banner {
+        margin-left: $grid-gutter-width;
+    }
+
+    .banner-info {
+        position: absolute;
+        padding: 2rem;
+        height: 100%;
+        width: 40%;
+    }
+
+    .promo-title {
+        font-size: 1.2em;
+        font-weight: bold;
+    }
+}
