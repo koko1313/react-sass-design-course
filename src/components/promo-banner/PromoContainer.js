@@ -8,11 +8,15 @@ const PromoContainer = props => {
             <PromoBanner 
                 title = "Day landscape"
                 description = "A beautiful bright day. Blue sky and a high mountain."
-                img = "https://images.wallpaperscraft.com/image/beautiful_scenery_mountains_lake_nature_93318_2560x1440.jpg" />
+                img = "https://images.wallpaperscraft.com/image/beautiful_scenery_mountains_lake_nature_93318_2560x1440.jpg">
+                <button className="btn promo-button">Day</button>
+            </PromoBanner>
             <PromoBanner 
                 title = "Night landscape"
                 description = "An amazing night sky."
-                img="https://wallpapercave.com/wp/wp3137905.jpg" />
+                img="https://wallpapercave.com/wp/wp3137905.jpg">
+                <button className="btn promo-button">Night</button>
+            </PromoBanner>
         </div>
     );
 }

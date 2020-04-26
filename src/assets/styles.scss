@@ -16,7 +16,7 @@
 
 // // Bootstrap components override
 @import "bootstrap-components/navbar";
-// @import "bootstrap-components/card";
+@import "bootstrap-components/card";
 
 
 @import "~font-awesome/scss/font-awesome";
@@ -27,3 +27,4 @@
 @import "components/video-container";
 @import "components/event-board";
 @import "components/promo-banner";
+@import "components/product-card";

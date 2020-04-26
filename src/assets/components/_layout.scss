@@ -1,3 +1,7 @@
 .main-section, .promo-container {
     margin-bottom: 5rem;
 }
+
+.main-section {
+    box-shadow: $card-box-shadow;
+}

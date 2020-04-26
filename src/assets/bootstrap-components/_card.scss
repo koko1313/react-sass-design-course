@@ -1,0 +1,9 @@
+.card {
+    box-shadow: $card-box-shadow;
+
+    .card-title {
+        color: $gray-700;
+        font-size: $font-size-md;
+        font-weight: $font-weight-normal;
+    }
+}

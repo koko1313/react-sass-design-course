@@ -1,0 +1,38 @@
+.product-card {
+    margin-bottom: 1rem;
+
+    .product-image-container {
+        height: 150px;
+        overflow: hidden;
+    }
+
+    .card-title {
+        margin-left: $grid-gutter-width / 2;
+    }
+
+    .product-info {
+        margin: .75rem 0;
+    }
+
+    .sales-count {
+        color: $gray-700;
+    }
+
+    .sales-label {
+        color: $gray-600;
+        margin-left: $grid-gutter-width / 4;
+    }
+
+    .price {
+        color: $gray-900;
+        font-size: $font-size-xlg;
+    }
+
+    .card-button {
+        flex: 1;
+        
+        + .card-button {
+            margin-left: $grid-gutter-width / 2;
+        }
+    }
+}
