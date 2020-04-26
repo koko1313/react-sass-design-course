@@ -1,11 +1,14 @@
 import React from 'react';
+import MainSection from '../components/MainSection';
 
 class Home extends React.Component {
 
 
     render() {
-        return <div className="col-md-3">
-                home
+        return <div className="row">
+            <div className="col">
+                <MainSection />
+            </div>
         </div>
     }
 }

@@ -1,0 +1,20 @@
+.event-board {
+    background-color: theme-color("section-bg");
+    flex: 1;
+
+    .event-content {
+        flex: 1; // еквивалентно на width 100% В СЛУЧАЯ!!!
+    }
+
+    .event-time {
+        width: 100px;
+    }
+
+    .event-teams {
+        width: 100%;
+    }
+
+    .team-container {
+        flex: 1;
+    }
+}
