@@ -31,9 +31,9 @@ const HeaderNavbar = (props) => {
                 <NavItem>
                     <NavLink 
                      tag={RRNavLink} 
-                     to="/gallery"
+                     to="/adventures"
                      activeClassName="active"
-                    >Gallery</NavLink>
+                    >Adventures</NavLink>
                 </NavItem>
             </Nav>
             </Collapse>

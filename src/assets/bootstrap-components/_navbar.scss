@@ -29,8 +29,8 @@
             border-top: 3px solid transparent;
             border-bottom: 3px solid transparent;
             &:hover, &.active {
-                border-bottom: 3px solid $white;
-                color: $white;
+                border-bottom: 3px solid rgba(250, 153, 28, .9);
+                color: rgba(250, 153, 28, .9);
                 @include media-breakpoint-down(sm) {
                     border-bottom: 3px solid transparent;
                 }

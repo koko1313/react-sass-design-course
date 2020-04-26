@@ -14,7 +14,7 @@ const EventBoard = props => {
                     <div className="event-title">Music battle</div>
 
                     <div className="event-teams d-flex">
-                        <TeamName team="Коко" />
+                        <TeamName team="Koko" />
 
                         <div className="event-time d-flex flex-column align-items-center">
                             <div className="live-label">Live</div>
@@ -25,7 +25,7 @@ const EventBoard = props => {
                             </div>
                         </div>
 
-                        <TeamName team="Някой друг" />
+                        <TeamName team="Someone else" />
                     </div>
 
                     <div className="event-label">Event label</div>

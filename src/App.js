@@ -9,7 +9,7 @@ import {
 import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
-import Gallery from './pages/Gallery';
+import Adventures from './pages/Adventures';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 
@@ -40,9 +40,9 @@ function App() {
                 <Home/>
               </Layout>
             </Route>
-            <Route path="/gallery">
+            <Route path="/adventures">
               <Layout>
-                <Gallery/>
+                <Adventures/>
               </Layout>
             </Route>
           </Switch>

@@ -26,7 +26,7 @@ const Product = props => {
                             <i className="fa fa-star"></i>
                         </div>
                         <div>
-                            <span class="badge badge-pill badge-danger">Free picks</span>
+                            <span class="badge badge-pill badge-danger">Free photos</span>
                         </div>
                     </div>
 
@@ -36,7 +36,7 @@ const Product = props => {
                             <div className="sales-label">sales</div>
                         </div>
                         <div className="price">
-                            123 лв.
+                            $123
                         </div>
                     </div>
 
