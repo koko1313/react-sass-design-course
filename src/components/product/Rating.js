@@ -8,20 +8,20 @@ const Rating = props => {
         for(let i = 0; i < 5; i++) {
             const result = props.rating - i;
             if(result > 0.5) {
-                stars.push(<i className="fas fa-star"></i>);
+                stars.push(<i key={i} className="fas fa-star"></i>);
             }
             if(result > 0 && result <= 0.55) {
-                stars.push(<i className="fas fa-star-half-alt"></i>);
+                stars.push(<i key={i} className="fas fa-star-half-alt"></i>);
             }
             if(result <= 0) {
-                stars.push(<i className="far fa-star"></i>);
+                stars.push(<i key={i} className="far fa-star"></i>);
             }
         }
 
         return stars;
     }
 
-    return <div className="rating d-flex">
+    return <div className="product-rating d-flex">
         {getStars()}
     </div>
 

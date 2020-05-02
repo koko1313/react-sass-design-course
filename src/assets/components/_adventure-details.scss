@@ -1,0 +1,116 @@
+.adventure-details {
+    background-color: $white;
+    padding: $grid-gutter-width;
+
+    .thumbnail-image {
+        border-radius: 1rem;
+        flex: 1;
+        overflow: hidden;
+
+        + .thumbnail-image {
+            margin-top: $grid-gutter-width;
+        }
+    }
+
+    .featured-image {
+        border-radius: 1rem;
+        width: 100%;
+        height: 100%;
+        // background-image: url("https://wallsdesk.com/wp-content/uploads/2016/11/Paragliding-Wallpapers.jpg");
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .adventure-title-container {
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+
+        .adventure-title {
+            font-size: $font-size-xxlg;
+            color: $gray-900;
+            font-weight: $font-weight-semibold;
+        }
+
+        .adventure-info {
+            font-size: $font-size-lg;
+            color: $gray-600;
+            font-weight: $font-weight-semibold;
+        }
+    }
+
+    .adventure-subtitle {
+        color: $gray-600;
+        font-size: $font-size-md;
+        margin-right: $grid-gutter-width;      
+    }
+
+    .tags-container {
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .tag-label {
+        border-radius: 10rem;
+        border: 1px solid theme-color("primary");
+        color: theme-color("primary");
+        background-color: rgba(theme-color("primary"), .05);
+        padding: .125rem $grid-gutter-width;
+        font-size: $font-size-md;
+
+        + .tag-label {
+            margin-left: $grid-gutter-width / 2;
+        }
+    }
+
+    .adventure-specs-container {
+        border-top: 1px solid $gray-300;
+        padding: 2rem 0;
+
+
+        .adventure-spec {
+            + .adventure-spec {
+                margin-left: $grid-gutter-width * 1.5;
+            }
+        }
+
+        .adventure-icon-container {
+            border-radius: 50%;
+            background-color: $gray-200;
+            width: 50px;
+            height: 50px;
+            margin-right: $grid-gutter-width / 2;
+
+            i {
+                font-size: $font-size-lg;
+                color: $gray-600;
+            }
+        }
+
+        .adventure-spec-label {
+            color: $gray-500;
+            line-height: 1;
+        }
+
+        .adventure-spec-value {
+            color: $gray-700;
+            font-weight: $font-weight-semibold;
+            line-height: 1;
+            margin-top: 2px;
+        }
+    }
+
+    .description-container {
+        padding-bottom: 1.5rem;
+
+        .description-label {
+            color: $gray-800;
+            font-size: $font-size-lg;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .description-content {
+            color: $gray-600;
+        }
+    }
+}

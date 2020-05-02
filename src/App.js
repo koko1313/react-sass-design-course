@@ -10,6 +10,7 @@ import { createStore, applyMiddleware } from "redux";
 import thunk from "redux-thunk";
 
 import Adventures from './pages/Adventures';
+import AdvetureDetails from './pages/AdventureDetails';
 import Home from './pages/Home';
 import Navbar from './components/Navbar';
 
@@ -35,16 +36,25 @@ function App() {
           {/* <FunctionalComponent count={1} step={1} />
           <FunctionalComponent count={2} step={3} /> */}
           <Switch>
+
             <Route path="/" exact>
               <Layout>
                 <Home/>
               </Layout>
             </Route>
+
             <Route path="/adventures">
               <Layout>
                 <Adventures/>
               </Layout>
             </Route>
+
+            <Route path="/adventure-details">
+              <Layout>
+                <AdvetureDetails />
+              </Layout>
+            </Route>
+
           </Switch>
         </Router>
       </Provider>
