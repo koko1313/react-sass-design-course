@@ -1,3 +1,7 @@
+.product-rating {
+    color: theme-color("rating");
+}
+
 .product-card {
     margin-bottom: 1rem;
 
@@ -6,8 +10,19 @@
         overflow: hidden;
     }
 
-    .card-title {
+    .card-title-container {
         margin-left: $grid-gutter-width / 2;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-title {
+        margin-bottom: .25rem;
+    }
+
+    .card-title-description {
+        font-size: $font-size-sxs;
+        font-style: italic;
+        color: $gray-600;
     }
 
     .product-info {

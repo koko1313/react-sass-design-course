@@ -1,4 +1,5 @@
 import React from 'react';
+import Rating from './Rating';
 
 const Product = props => {
 
@@ -11,20 +12,14 @@ const Product = props => {
                 <div className="card-body">
                     <div className="d-flex">
                         <i className="fa fa-address-card"></i>
-                        <h5 className="card-title">{props.title}</h5>
+                        <div className="card-title-container">
+                            <h5 className="card-title">{props.title}</h5>
+                            <div className="card-title-description">{props.description}</div>
+                        </div>
                     </div>
-                    
-                    <p className="card-text">{props.description}</p>
-
-                    
 
                     <div className="d-flex justify-content-between">
-                        <div className="rating d-flex">
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                            <i className="fa fa-star"></i>
-                        </div>
+                        <Rating rating={props.rating} />
                         <div>
                             <span class="badge badge-pill badge-danger">Free photos</span>
                         </div>

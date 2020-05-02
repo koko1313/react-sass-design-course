@@ -1,9 +1,10 @@
 {
-  "name": "spa-react-2020",
+  "name": "react-sass-design-course",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@babel/core": "7.7.4",
+    "@fortawesome/fontawesome-free": "^5.13.0",
     "@svgr/webpack": "4.3.3",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.4.0",
@@ -30,7 +31,6 @@
     "eslint-plugin-react": "7.16.0",
     "eslint-plugin-react-hooks": "^1.6.1",
     "file-loader": "4.3.0",
-    "font-awesome": "^4.7.0",
     "fs-extra": "^8.1.0",
     "html-webpack-plugin": "4.0.0-beta.5",
     "identity-obj-proxy": "3.0.0",
