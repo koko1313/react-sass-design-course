@@ -8,17 +8,31 @@
         overflow: hidden;
 
         + .thumbnail-image {
-            margin-top: $grid-gutter-width;
+            @include media-breakpoint-up(md) {
+                margin-top: $grid-gutter-width;
+            }
+
+            @include media-breakpoint-down(md) {
+                margin-left: $grid-gutter-width / 4;
+            }
         }
     }
 
     .featured-image {
         border-radius: 1rem;
         width: 100%;
-        height: 100%;
+        height: 230px;
         // background-image: url("https://wallsdesk.com/wp-content/uploads/2016/11/Paragliding-Wallpapers.jpg");
         background-size: cover;
         overflow: hidden;
+        background-position: center;
+        margin-bottom: $grid-gutter-width / 4;
+
+        @include media-breakpoint-up(sm) {
+            background-position: left top;
+            height: 100%;
+            margin-bottom: 0;
+        }
     }
 
     .adventure-title-container {
@@ -35,6 +49,11 @@
             font-size: $font-size-lg;
             color: $gray-600;
             font-weight: $font-weight-semibold;
+            margin-top: .5rem;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 0;
+            }
         }
     }
 
@@ -47,6 +66,16 @@
     .tags-container {
         margin-top: 1.5rem;
         margin-bottom: 2rem;
+        // overflow-y: scroll;
+        margin-left: - $grid-gutter-width / 5;
+        margin-right: - $grid-gutter-width / 5;
+        flex-wrap: wrap;
+
+        @include media-breakpoint-up(md) {
+            margin-left: 0;
+            margin-right: 0;
+            flex-wrap: nowrap;
+        }
     }
 
     .tag-label {
@@ -56,16 +85,24 @@
         background-color: rgba(theme-color("primary"), .05);
         padding: .125rem $grid-gutter-width;
         font-size: $font-size-md;
+        margin-left: $grid-gutter-width / 5;
+        margin-right: $grid-gutter-width / 5;
+        margin-bottom: $grid-gutter-width / 2.5;
 
-        + .tag-label {
-            margin-left: $grid-gutter-width / 2;
+        @include media-breakpoint-up(md) {
+            margin-bottom: 0;
+
+            + .tag-label {
+                margin-left: $grid-gutter-width / 2;
+                margin-right: 0;
+            }
         }
     }
 
     .adventure-specs-container {
         border-top: 1px solid $gray-300;
         padding: 2rem 0;
-
+        overflow-x: auto;
 
         .adventure-spec {
             + .adventure-spec {
@@ -89,6 +126,7 @@
         .adventure-spec-label {
             color: $gray-500;
             line-height: 1;
+            white-space: nowrap;
         }
 
         .adventure-spec-value {

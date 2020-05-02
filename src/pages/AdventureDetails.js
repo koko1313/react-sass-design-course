@@ -8,8 +8,8 @@ class AdventureDetails extends React.Component {
     render() {
         return <div className="adventure-details">
             <div className="row">
-                <div className="col-md-3">
-                    <div className="d-flex flex-column h-100">
+                <div className="col-md-3 order-1 order-md-0">
+                    <div className="d-flex flex-row flex-md-column h-100">
                         <div className="thumbnail-image">
                             <img className="img-fluid" src="https://wallsdesk.com/wp-content/uploads/2016/11/Paragliding-Wallpapers.jpg" alt="sad" />
                         </div>
@@ -22,14 +22,14 @@ class AdventureDetails extends React.Component {
                     </div>
                 </div>
 
-                <div className="col">
+                <div className="col order-0 order-md-1">
                     <div className="featured-image" style={{backgroundImage: `url(${imgUrl})`}}></div>
                 </div>
             </div>
 
             <div className="row">
                 <div className="col">
-                    <div className="adventure-title-container d-flex justify-content-between align-items-center">
+                    <div className="adventure-title-container d-flex justify-content-between flex-column flex-md-row align-items-left align-items-md-center">
                         <div className="adventure-title">
                             Title goes here
                         </div>
@@ -42,9 +42,9 @@ class AdventureDetails extends React.Component {
 
             <div className="row">
                 <div className="col">
-                    <div className="d-flex align-items-center">
+                    <div className="d-flex align-items-center justify-content-between justify-content-md-start">
                         <div className="adventure-subtitle">
-                            ads
+                            Some additional info ...
                         </div>
                         <Rating rating={4.5} />
                     </div>
